@@ -1,0 +1,47 @@
+.logo{
+    /* border: 1px solid black; */
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    bottom: -57px;
+}
+
+.logo-navbar{
+    display: flex;
+}
+
+.podcast-texto {
+    margin-left: 30px;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 24px;
+}
+
+.carrosel {
+    margin-top: 200px;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 5px solid;
+    animation: changeColor 5s linear infinite; /* Define a animação */
+}
+
+@keyframes changeColor {
+    0% {
+      border-color: red; /* Cor inicial da borda */
+    }
+    25% {
+      border-color: blue; /* Cor intermediária */
+    }
+    50% {
+      border-color: rgb(3, 201, 227); /* Outra cor intermediária */
+    }
+    75% {
+      border-color: rgb(53, 227, 40); /* Mais uma cor intermediária */
+    }
+    100% {
+      border-color: red; /* Volta para a cor inicial */
+    }
+  }
