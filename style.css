@@ -63,6 +63,16 @@
   margin-top: 50px;
 }
 
+.card-img-top {
+  transition: opacity 0.5s ease;
+}
+
+.card-img-top:hover{
+  opacity: 70%;
+}
+
+/* PODCAST-TEMPO_________________ */
+
 .custom-card {
   margin-bottom: 20px;
 }
@@ -74,6 +84,7 @@
 .main-baixo h1{
   margin-left: 65px;
 }
+
 .scrool-horizontal {
   background-color: rgb(181, 175, 175);
   display: flex;
@@ -91,11 +102,31 @@
   display: flex;
   flex-direction: column;
   min-width: 300px;
-  height: 170px;
-  background-color: white;
+  height: 230px;
+  background-color: rgb(129, 128, 128);
   border-radius: 7px;
   border: 3px solid black;
 }
+
+.descricao-podcast {
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  margin-top: 3px;
+  text-decoration: none;
+}
+
+.descricao-podcast-texto {
+  margin-left: 3px;
+}
+
+.banner-menor {
+  transition: opacity 0.5s ease;
+}
+
+.banner-menor:hover{
+  opacity: 60%;
+} 
+
 
 /* FOOTER______________________________________________________________ */
 
@@ -161,6 +192,32 @@ footer {
   color: #fff;
 }
 
-.redes-sociais a:hover {
-  text-decoration: underline;
+.face, .twitter, .insta {
+  text-decoration: none;
+  color: white;
+  transition: color 0.5s ease, background-position 1s ease;
 }
+
+.face:hover {
+  color: #1947ab ;
+}
+
+.twitter:hover {
+  color: #00acee;
+}
+
+.insta {
+  display: inline-block; /* Para aplicar o gradiente à palavra */
+  background-image: linear-gradient(blue 8px, purple, rgb(255, 94, 0), yellow);
+  -webkit-background-clip: text; /* Aplica o gradiente apenas ao texto no Chrome e Safari */
+  background-clip: text; /* Aplica o gradiente apenas ao texto */
+  color: white; /* Torna o texto transparente para o gradiente aparecer */
+  transition: background-position 1s ease, color 0.5s ease, font-size 1s ease;
+}
+
+.insta:hover {
+      background-position: 100%;
+      color: transparent;
+  }
+
+
